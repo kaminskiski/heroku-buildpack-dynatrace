@@ -21,6 +21,9 @@ downloadAgent() {
     local INSTALLERFILE=$2
     local USERAGENT='heroku/1.0'
 
+    # debug
+    echo "this is the DOWNLOADURL: " $DOWNLOADURL
+
     # determine ssl mode
     local SSL_INSECURE_CURL=""
     local SSL_INSECURE_WGET=""
