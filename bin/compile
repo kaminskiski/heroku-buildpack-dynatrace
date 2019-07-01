@@ -96,9 +96,9 @@ puts_verbose "DT_API_TOKEN=$DT_API_TOKEN" | sed "s#$DT_API_TOKEN#DEDUCTED#g"
 puts_verbose "DT_API_URL=$DT_API_URL"
 puts_verbose "DT_DOWNLOAD_URL=$DT_DOWNLOAD_URL" | sed "s#$DT_API_TOKEN#DEDUCTED#g"
 
-+ # DEBUG
-+ echo "the length of DT_TENANT: " $(expr length "$DT_TENANT")
-+ echo "the length of DT_API_TOKEN: " $(expr length "$DT_API_TOKEN")
+# DEBUG
+echo "the length of DT_TENANT: " $(expr length "$DT_TENANT")
+echo "the length of DT_API_TOKEN: " $(expr length "$DT_API_TOKEN")
 
 # Download and install the agent
 INSTALLER_FILE=$(mktemp)
